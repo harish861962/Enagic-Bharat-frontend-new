@@ -131,7 +131,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <FaMapMarkerAlt className="text-red-500 text-xl mt-1" />
               <p>
-              1st Floor 11-12, Coral Tower, Narendra Nagar, Sodala, Jaipur, Rajasthan, 302019
+             Aamor by Aashish Group, Kasli Rd, Patrakar Colony Extension, Mansarovar, Jaipur, Rajasthan 302020
 
               </p>
             </div>

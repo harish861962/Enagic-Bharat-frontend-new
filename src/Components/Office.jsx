@@ -57,11 +57,7 @@ We’d love to welcome you to our space! Drop by anytime.
                   </h4>
 
                   <p className="text-gray-600">
-                    123 Business Park,
-                    <br />
-                    Mumbai, Maharashtra,
-                    <br />
-                    India - 400001
+                    Aamor by Aashish Group, Kasli Rd, Patrakar Colony  <br /> Extension, Mansarovar, Jaipur, Rajasthan <br /> 302020
                   </p>
 
                 </div>

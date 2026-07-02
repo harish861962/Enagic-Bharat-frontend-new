@@ -159,7 +159,7 @@ const [pincode, setPincode] = useState("");
                 </h3>
 
                 <p className="text-gray-600 mt-2">
-                  1st Floor 11-12, Coral Tower, Narendra Nagar, Sodala, Jaipur, Rajasthan, 302019
+                  Aamor by Aashish Group, Kasli <br />  Rd, Patrakar  Colony Extension ,<br /> Mansarovar, Jaipur, Rajasthan <br /> 302020
                 </p>
 
               </div>

@@ -364,7 +364,7 @@ const [pincode, setPincode] = useState("");
       </div>
 
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

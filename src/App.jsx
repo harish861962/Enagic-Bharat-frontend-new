@@ -16,9 +16,9 @@ function Home() {
       <Slider />
       <Products />
       <Contact/>
+      <Aboutus/>
       <Office />
       <Footer />
-      <Aboutus/>
     </>
   );
 }
@@ -34,7 +34,7 @@ function App() {
           <>
             <Navbar />
             <Contact />
-            <Footer />
+            {/* <Footer /> */}
           </>
         }
       />
@@ -44,7 +44,7 @@ function App() {
           <>
             <Navbar />
             <Products />
-            <Footer />
+            {/* <Footer /> */}
           </>
         }
       />
@@ -54,7 +54,7 @@ function App() {
           <>
             <Navbar />
             <Office />
-            <Footer />
+            {/* <Footer /> */}
           </>
         }
       />

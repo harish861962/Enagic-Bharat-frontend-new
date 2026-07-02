@@ -211,7 +211,7 @@ export default function Aboutus() {
       </section>
 
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

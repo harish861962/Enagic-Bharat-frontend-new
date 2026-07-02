@@ -161,7 +161,7 @@ We’d love to welcome you to our space! Drop by anytime.
       </div>
 
     </section>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }

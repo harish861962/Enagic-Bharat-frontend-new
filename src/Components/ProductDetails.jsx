@@ -65,17 +65,17 @@ export default function ProductDetails() {
   {product.longDescription}
 </p>
 
-              <h2 className="text-4xl font-bold text-red-600 mt-8">
+              {/* <h2 className="text-4xl font-bold text-red-600 mt-8">
                 {product.price}
-              </h2>
+              </h2> */}
 
               {/* Buttons */}
 
               <div className="flex flex-wrap gap-4 mt-8">
 
-                <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-semibold transition">
+                {/* <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-semibold transition">
                   Buy Now
-                </button>
+                </button> */}
 
                 <button
                   onClick={() => setShowDetails(!showDetails)}

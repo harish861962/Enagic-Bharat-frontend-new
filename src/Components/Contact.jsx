@@ -238,7 +238,7 @@ const [pincode, setPincode] = useState("");
 
                 <input
                   type="text"
-                  placeholder="Address"
+                  placeholder="Full Address"
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
                   required

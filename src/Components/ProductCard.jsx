@@ -72,9 +72,9 @@ export default function ProductCard({ product }) {
 
         {/* Price */}
 
-        <h3 className="text-2xl font-bold text-red-600 text-center mt-5">
+        {/* <h3 className="text-2xl font-bold text-red-600 text-center mt-5">
           {product.price}
-        </h3>
+        </h3> */}
 
         {/* Button */}
         <Link

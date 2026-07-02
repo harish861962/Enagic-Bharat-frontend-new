@@ -5,7 +5,7 @@ import { products } from "../data/products";
 
 export default function Products() {
   return (
-    <section id="Product" className="py-16 bg-gray-100">
+    <section id="Product" className="py-16 bg-gray-100 mt-18">
 
       <div className="max-w-7xl mx-auto px-6">
 

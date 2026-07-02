@@ -7,9 +7,9 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-3 sm:px-6">
         <div className="flex min-h-[72px] items-center justify-between gap-2 py-3 sm:gap-4">
           <div className="text-base font-bold whitespace-nowrap text-red-600 sm:text-xl lg:text-3xl">
-            <a href="#" className="block leading-tight">
+            <Link to="/" className="block leading-tight">
               ENAGIC BHARAT
-            </a>
+            </Link>
           </div>
 
           <ul className="hidden gap-8 font-semibold lg:flex xl:gap-10">
@@ -18,10 +18,11 @@ export default function Navbar() {
             <Link to="/office">OFFICE</Link>
             <Link to="/contact">CONTACT</Link> */}
 
-            <li><a href="#">HOME</a></li>
-            <li><a href="#Product">PRODUCTS</a></li>
-            <li><a href="#office">OFFICE</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/productcard/">Products</Link></li>
+            <li><a href="#office">Office</a></li>
+            {/* <li><a href="#contact">CONTACT</a></li> */}
+            <li><a href="#aboutus">About Us</a></li>
           </ul>
 
           <a

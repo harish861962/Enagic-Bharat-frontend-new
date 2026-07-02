@@ -1,6 +1,5 @@
 // Conatct page change as  Demo Page 
 
-
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import {
@@ -13,6 +12,9 @@ import {
   FaWhatsapp,
   FaYoutube,
 } from "react-icons/fa";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -72,11 +74,13 @@ const [pincode, setPincode] = useState("");
 
 
   return (
+    <>
+    <Navbar/>
     <section id="contact" className="bg-gradient-to-br from-red-50 via-white to-red-100 min-h-screen">
 
       {/* Hero */}
 
-      <div className="bg-gradient-to-r from-red-700 to-red-500 text-white py-10">
+      <div className="bg-gradient-to-r from-red-700 to-red-500 text-white mt-24 py-10">
 
         <div className="max-w-5xl mx-auto px-6 text-center">
 
@@ -360,5 +364,7 @@ const [pincode, setPincode] = useState("");
       </div>
 
     </section>
+    <Footer/>
+    </>
   );
 }

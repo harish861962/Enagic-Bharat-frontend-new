@@ -4,12 +4,16 @@ import {
   FaEnvelope,
   FaClock,
 } from "react-icons/fa";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 export default function Office() {
   return (
+  <>
+    <Navbar/>
     <section id="office" className="mb-15 bg-gray-100">
 
-      <div className="max-w-7xl  mx-auto px-5">
+      <div className="max-w-7xl  mx-auto px-5 mt-24 ">
 
         <div className="text-center mb-14" >
 
@@ -157,5 +161,7 @@ We’d love to welcome you to our space! Drop by anytime.
       </div>
 
     </section>
+    <Footer/>
+    </>
   );
 }

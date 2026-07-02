@@ -5,11 +5,14 @@ import img3 from "../assets/Super-501-3-1.jpg";
 import img4 from "../assets/SD501_banner3.jpg";
 import img2 from "../assets/Platinum-3.jpg"; 
 import img5 from "../assets/K8.jpg";
+import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
+
 
 const images = [img1, img2, img3, img4, img5];
 
 export default function Slider() {
+  const [showMore, setShowMore] = useState(false);
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -22,7 +25,7 @@ export default function Slider() {
 
   return (
     <section id="slider" className="pt-16 sm:pt-20 overflow-x-hidden md:overflow-x-visible">
-      <div className="relative h-[320px] sm:h-[360px] md:h-[80vh] lg:h-screen overflow-hidden bg-black">
+      <div className="relative min-h-[520px] sm:min-h-[560px] md:min-h-[80vh] lg:min-h-screen overflow-hidden bg-black">
 
         {/* Image */}
         <img
@@ -67,15 +70,52 @@ export default function Slider() {
 
               </p>
 
-              <div className="!mt-4 sm:!mt-6 md:!mt-8 flex flex-col min-[390px]:flex-row gap-3 sm:gap-4">
+              <div className="!mt-4 sm:!mt-6 md:!mt-8 flex flex-col items-start gap-4">
+                <div className="flex flex-col min-[390px]:flex-row gap-3 sm:gap-4">
 
-                <Link to="/Productcard" className="bg-red-600 hover:bg-red-700 transition !px-5 !py-2 md:!px-8 md:!py-3 rounded-full text-sm md:text-base font-semibold">
-                  Explore Products
-                </Link>
+                  <Link to="/productcard/" className="bg-red-600 hover:bg-red-700 transition !px-5 !py-2 md:!px-8 md:!py-3 rounded-full text-sm md:text-base font-semibold text-white">
+                    Explore Products
+                  </Link>
 
-                <button className="border border-white hover:bg-white hover:text-black transition !px-5 !py-2 md:!px-8 md:!py-3 rounded-full text-sm md:text-base font-semibold">
-                  Learn More
-                </button>
+                  <button
+                    type="button"
+                    onClick={() => setShowMore(!showMore)}
+                    className="flex items-center justify-center gap-2 border border-white hover:bg-white hover:text-black transition-all duration-300 !px-5 !py-2 md:!px-8 md:!py-3 rounded-full text-sm md:text-base font-semibold text-white shadow-lg"
+                  >
+                    {showMore ? "Show Less" : "Learn More"}
+
+                    <ChevronDown
+                      size={20}
+                      className={`transition-transform duration-300 ${
+                        showMore ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+                </div>
+
+                <div
+                  className={`w-full overflow-hidden transition-all duration-700 ease-in-out ${
+                    showMore ? "max-h-72 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+                >
+                  <div className="bg-white/10 backdrop-blur-md rounded-xl !px-4 !py-3 sm:!px-6 sm:!py-4">
+
+                    <h2 className="text-white text-base sm:text-lg font-semibold">
+                      Why Choose Enagic?
+                    </h2>
+
+                    <p className="!mt-2 text-gray-200 leading-6 sm:leading-7 text-sm sm:text-base">
+                      Enagic water ionizers are built with advanced Japanese technology to
+                      produce clean, antioxidant-rich alkaline water. These machines help
+                      support better hydration, healthy living, and long-term wellness.
+                      Trusted in over 150 countries, Enagic products are known for their
+                      durability, premium quality, and innovative design.
+                    </p>
+
+                  </div>
+                </div>
+
+                
 
               </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaInstagram,
@@ -10,12 +11,14 @@ import {
   FaArrowRight,
   FaTwitter,
 } from "react-icons/fa";
+import { products } from "../data/products";
 
 const footerLinks = [
-  { name: "Home", href: "#" },
-  { name: "Products", href: "#Product" },
-  { name: "Office", href: "#office" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", to: "/" },
+  { name: "About Us", to: "/aboutus" },
+  { name: "Products", to: "/productcard/" },
+  { name: "Office", to: "/office" },
+  { name: "Contact", to: "/contact" },
 ];
 
 export default function Footer() {
@@ -85,7 +88,7 @@ export default function Footer() {
                 className="flex items-center gap-3 hover:text-red-500 cursor-pointer duration-300"
               >
                 <FaArrowRight className="text-sm" />
-                <a href={item.href}>{item.name}</a>
+                <Link to={item.to}>{item.name}</Link>
               </li>
             ))}
 
@@ -102,21 +105,13 @@ export default function Footer() {
 
           <ul className="space-y-4">
 
-            {[
-              "Leveluk K8",
-              "SD501",
-              "JRIV",
-              "Anespa",
-              "Ukon",
-              "Super 501",
-              
-            ].map((item) => (
+            {products.map((item) => (
               <li
-                key={item}
+                key={item.id}
                 className="flex items-center gap-3 hover:text-red-500 cursor-pointer duration-300"
               >
                 <FaArrowRight className="text-sm" />
-                {item}
+                <Link to={`/product/${item.id}`}>{item.name}</Link>
               </li>
             ))}
 

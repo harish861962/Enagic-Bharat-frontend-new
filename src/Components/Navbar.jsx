@@ -7,7 +7,7 @@ const navLinks = [
   { name: "Products", to: "/productcard/" },
   { name: "Office", to: "/office" },
   { name: "About Us", to: "/aboutus" },
-  { name: "Contact", to: "/contact" },
+  // { name: "Contact", to: "/contact" },
 ];
 
 export default function Navbar() {

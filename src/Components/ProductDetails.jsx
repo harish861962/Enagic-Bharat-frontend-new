@@ -65,9 +65,9 @@ export default function ProductDetails() {
   {product.longDescription}
 </p>
 
-              {/* <h2 className="text-4xl font-bold text-red-600 mt-8">
+              <h2 className="text-4xl font-bold text-red-600 mt-8">
                 {product.price}
-              </h2> */}
+              </h2>
 
               {/* Buttons */}
 
